@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+:root {
+    --sidebar-width: 12rem;
+    --body-margin-left: 12.5rem;
+    --sidenav-collapse-left: -8.5rem;
+    --adjust-body-margin-left: 4rem;
+    --nav-collapse-time: .5s;
+    --topbar-height: 8vh;
+    --body-minheight: 92vh;
+    --font-bree: 'Bree Serif', serif;
+    --font-lobster: 'Lobster', cursive;
+}

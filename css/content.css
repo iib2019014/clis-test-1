@@ -1,0 +1,38 @@
+@import url('./variables.css');
+
+
+.content {
+    width: 100%;
+    min-height: var(--body-minheight);
+    margin-left: var(--body-margin-left);
+    border: 1px solid green;
+}
+
+
+@keyframes adjust-content {
+    0% {
+        margin-left: var(--body-margin-left);
+    }
+
+    100% {
+        margin-left: var(--adjust-body-margin-left);
+    }
+}
+
+.content-adjust {
+    animation: adjust-content var(--nav-collapse-time) ease-in-out forwards;
+}
+
+@keyframes un-adjust-content {
+    0% {
+        margin-left: var(--adjust-body-margin-left);
+    }
+
+    100% {
+        margin-left: var(--body-margin-left);
+    }
+}
+
+.content-un-adjust {
+    animation: un-adjust-content var(--nav-collapse-time) ease-in-out forwards;
+}
