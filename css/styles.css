@@ -6,16 +6,19 @@ main {
 }
 
 .top-bar-fixed {
+    position: fixed;
     width: 100%;
     height: var(--topbar-height);
-    /* border: 1px solid blue; */
 
     display: flex;
     /* flex-direction: row; */
+    background-color: var(--grey-100);
 }
 
 .site-body {
     display: flex;
+
+    /* margin-top: var(--topbar-height); */
 }
 
 .bars-icon, .toggle-logo {
@@ -31,7 +34,7 @@ main {
     position: absolute;
     /* background-color: rgb(206, 206, 206); */
 
-    z-index: 10;
+    /* z-index: 10; */
 }
 
 .toggler {
@@ -62,6 +65,7 @@ main {
     /* text-transform: uppercase; */
 
     color: var(--grey-600);
+    /* z-index: 10; */
 }
 
 .fad.fa-bars {
@@ -70,17 +74,18 @@ main {
 }
 
 .sidenav {
-    position: absolute;
+    position: fixed;
     width: var(--sidebar-width);
     height: var(--body-minheight);
     /* border: 1px solid red; */
+    margin-top: var(--topbar-height);
 
     background-color: var(--grey-100);
 
     font-family: var(--font-bree);
 
-    border-top-right-radius: 10px;
-    z-index: 10;
+    /* border-top-right-radius: 10px; */
+    /* z-index: 10; */
 
     /* left: -4rem; */
 
