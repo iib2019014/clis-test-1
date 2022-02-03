@@ -36,7 +36,13 @@ toggler.addEventListener("click", function(event) {
 //     })
 // })
 
-active_page_util = document.querySelector(".keep-link-active");
-active_page = active_page_util.classList[1]
+
+// active_page_util = document.querySelector(".keep-link-active");
+active_page_util = document.querySelectorAll(".keep-link-active");
+console.log(active_page_util);
+// active_page = active_page_util.classList[1]
+active_page = active_page_util[active_page_util.length - 1].classList[1]
+console.log(active_page);
 active_nav_item = document.getElementById(active_page)
+console.log(active_nav_item);
 active_nav_item.classList.add("sidenav-item-active")
