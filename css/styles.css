@@ -3,7 +3,6 @@
 
 main {
     min-height: 100vh;
-    /* border: 1px solid red; */
 }
 
 .top-bar-fixed {
@@ -36,15 +35,21 @@ main {
 }
 
 .toggler {
-    width: 5rem;
+    width: 6rem;
     /* letter-spacing: .05rem; */
     font-size: 2.5rem;
 
     border: none;
     background: none;
 
+    border: .1rem solid var(--grey-300);
+    border-left: .5rem solid var(--grey-300);
+    border-right: .5rem solid var(--grey-300);
+
+    border-radius: 5px;
+
     font-weight: 900;
-    color: rgb(99, 145, 206);
+    color: var(--light-blue-1);
     /* background-color: rgb(99, 145, 206); */
     font-family: var(--font-lobster);
 }
@@ -55,6 +60,8 @@ main {
     text-align: center;
     font-family: var(--font-bree);
     /* text-transform: uppercase; */
+
+    color: var(--grey-600);
 }
 
 .fad.fa-bars {
@@ -68,10 +75,11 @@ main {
     height: var(--body-minheight);
     /* border: 1px solid red; */
 
-    background-color: rgb(231, 231, 231);
+    background-color: var(--grey-100);
 
     font-family: var(--font-bree);
 
+    border-top-right-radius: 10px;
     z-index: 10;
 
     /* left: -4rem; */
@@ -123,9 +131,9 @@ main {
 .sidenav-item {
     width: 90%;
     display: flex;
-    padding: 0 .5rem;
-    margin: .5rem 0;
-    background-color: rgb(206, 206, 206);
+    padding: .2rem .5rem;
+    margin: 1rem 0;
+    background-color: var(--grey-300);
 
     /* box-shadow: 1px 1px 5px inset; */
     /* box-shadow: 1px 1px 5px; */
@@ -133,8 +141,8 @@ main {
 }
 
 .sidenav-item-active {
-    color: rgb(192, 192, 192);
-    background-color: rgb(102, 102, 102);
+    color: var(--grey-300);
+    background-color: var(--grey-600);
 }
 
 .item-text {
