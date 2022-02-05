@@ -50,6 +50,7 @@
     justify-content: space-around;
     /* border: 1px solid red; */
     margin: 0 0 .2rem 0;
+    font-family: var(--font-bree);
 }
 
 .section-tab {
@@ -66,6 +67,7 @@
 
     font-family: var(--font-bree);
 
+    color: var(--grey-800);
     background-color: var(--grey-300);
 
     border-left: 1px solid var(--grey-700);
@@ -78,4 +80,20 @@
     /* min-height: 80vh; */
     /* border: 1px solid red; */
     background-color: var(--grey-100);
+    font-family: var(--font-bree);
+
+    padding: 2rem;
+}
+
+.content-section {
+    display: none;
+}
+
+.tab-active {
+    color: var(--grey-300);
+    background-color: var(--grey-800);
+}
+
+.section-active {
+    display: block;
 }

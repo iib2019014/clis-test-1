@@ -25,18 +25,6 @@ toggler.addEventListener("click", function(event) {
 
 })
 
-// sidenav_items = document.querySelectorAll(".sidenav-item");
-
-// sidenav_items.forEach(function (item) {
-//     item.addEventListener("click", function (event) {
-//         active_item = document.querySelector(".sidenav-item-active");
-//         console.log(active_item);
-//         active_item.classList.remove("sidenav-item-active");
-//         item.classList.add("sidenav-item-active");
-//     })
-// })
-
-
 // active_page_util = document.querySelector(".keep-link-active");
 active_page_util = document.querySelectorAll(".keep-link-active");
 console.log(active_page_util);
@@ -46,3 +34,29 @@ console.log(active_page);
 active_nav_item = document.getElementById(active_page)
 console.log(active_nav_item);
 active_nav_item.classList.add("sidenav-item-active")
+
+
+
+function removeOthers(all_tabs, current) {
+    all_tabs.forEach(function (tab) {
+        if(tab != current) {
+            tab.classList.remove("tab-active");
+            sec = document.getElementById(tab.classList[1]);
+            sec.classList.remove("section-active");
+        }
+    })
+}
+
+
+section_tabs = document.querySelectorAll(".section-tab");
+sections = document.querySelectorAll(".content-section");
+
+section_tabs.forEach(function (tab) {
+    tab.addEventListener("click", function (event) {
+        section = document.getElementById(tab.classList[1]);
+        removeOthers(section_tabs, tab);
+        // removeOthers(sections, section);
+        tab.classList.add("tab-active");
+        section.classList.add("section-active");
+    })
+})
